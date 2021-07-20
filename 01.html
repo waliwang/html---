@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .group{
+            max-width: 1200px;
+            margin: auto;
+        }
+        .box .item{
+            font-size: 25px;
+            margin: 20px;
+        }
+        .box img{
+            width: 100%;
+        }
+
+        @media screen and (min-width: 1200px)  {
+            .box{
+                display: flex;
+            }
+            .box .img{
+                width: 50%;
+            }
+            .box .item{
+                width: 50%;
+            }
+            /* .box:nth-child(even) .item{
+                order: -1;
+
+            } */
+
+            .box:nth-child(even){
+                flex-direction: row-reverse;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="group">
+        <div class="box">
+            <div class="img">
+            <img src="https://picsum.photos/id/598/350/250" alt="">
+            </div>
+            <div class="item">
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta asperiores consectetur nemo. Velit at eaque, temporibus libero tenetur, quas officiis voluptates adipisci nulla natus facilis nihil vero delectus quo totam!</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+            <img src="https://picsum.photos/id/598/350/250" alt="">
+            </div>
+            <div class="item">
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta asperiores consectetur nemo. Velit at eaque, temporibus libero tenetur, quas officiis voluptates adipisci nulla natus facilis nihil vero delectus quo totam!</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="img">
+            <img src="https://picsum.photos/id/598/350/250" alt="">
+            </div>
+            <div class="item">
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta asperiores consectetur nemo. Velit at eaque, temporibus libero tenetur, quas officiis voluptates adipisci nulla natus facilis nihil vero delectus quo totam!</p>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
